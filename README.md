@@ -8,7 +8,7 @@ Java lambda expression is treated as a function, so compiler does not create .cl
 
 
 # Why use Lambda Expression
-1. To provide the implementation of Functional interface.\
+1. To provide the implementation of Functional interface.
 2. Less coding.
 
 
