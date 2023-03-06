@@ -13,7 +13,7 @@ Java lambda expression is treated as a function, so compiler does not create .cl
 
 
 # Java Lambda Expression Syntax
-** (argument-list) -> {body} **
+**(argument-list) -> {body}**
 
 
 1) Argument-list: It can be empty or non-empty as well.
