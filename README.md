@@ -28,32 +28,32 @@ Java lambda expression is treated as a function, so compiler does not create .cl
 
 
 # No Parameter Syntax
-
+```
 () -> {  
 
 //Body of no parameter lambda  
 
 } 
-
+```
 
 # One Parameter Syntax
-
+```
 (p1) -> {  
 
 //Body of single parameter lambda  
 
 } 
-
+```
 
 
 # Two Parameter Syntax
-
+```
 (p1,p2) -> {  
 
 //Body of multiple parameter lambda  
 
 }  
-
+```
 
 
 <img src="https://i.ytimg.com/vi/ph-94lsHloo/maxresdefault.jpg" />
