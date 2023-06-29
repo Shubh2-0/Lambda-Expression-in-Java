@@ -10,7 +10,7 @@ Lambda expressions were introduced in Java 8 as a way to write more concise and 
 Lambda expressions are especially useful when working with functional interfaces, which are interfaces that have only one abstract method. They allow you to express instances of these interfaces more compactly and enhance readability.
 
 Java lambda expression is treated as a function, so compiler does not create .class file.
-
+ 
 # Why use Lambda Expression
 1. To provide the implementation of Functional interface.
 2. Less coding.
