@@ -1,136 +1,71 @@
-# Lambda Expressions in Java () -> {}
+<div align="center">
 
-![image](https://github.com/Shubh2-0/Lambda-Expression-in-Java/assets/112773220/3acd8e86-ca0b-42c2-8fbd-8e96fa055bf2)
+# λ Lambda Expressions in Java
 
+[![GitHub stars](https://img.shields.io/github/stars/Shubh2-0/Lambda-Expression-in-Java?style=for-the-badge&logo=github&color=yellow)](https://github.com/Shubh2-0/Lambda-Expression-in-Java/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Shubh2-0/Lambda-Expression-in-Java?style=for-the-badge&logo=github&color=blue)](https://github.com/Shubh2-0/Lambda-Expression-in-Java/network/members)
 
-## What are Lambda Expressions? 🤔
+<img src="https://miro.medium.com/max/1400/1*c8wSiQ0WcYcyQFYdgtXLLg.png" alt="Lambda" width="500"/>
 
-Lambda expressions were introduced in Java 8 as a way to write more concise and functional-style code. They provide a way to pass behavior as an argument to a method or constructor, without the need for creating anonymous inner classes.
+### Embrace Functional Programming in Java
 
-Lambda expressions are especially useful when working with functional interfaces, which are interfaces that have only one abstract method. They allow you to express instances of these interfaces more compactly and enhance readability.
+*Write concise, readable code with lambda expressions and functional interfaces*
 
-Java lambda expression is treated as a function, so compiler does not create .class file.
- 
-# Why use Lambda Expression
-1. To provide the implementation of Functional interface.
-2. Less coding.
+</div>
 
+---
 
-# Java Lambda Expression Syntax
-**(argument-list) -> {body}**
+## 🎯 About
 
+Lambda Expressions (Java 8) provide a clear and concise way to implement functional interfaces. Write less code, achieve more!
 
-**1) Argument-list**: It can be empty or non-empty as well.
+## 📝 Syntax
 
-**2) Arrow-token**: It is used to link arguments-list and body of expression.
+```java
+// No parameters
+() -> System.out.println("Hello!")
 
-**3) Body:** It contains expressions and statements for lambda expression.
+// One parameter
+x -> x * x
 
-
-# No Parameter Syntax
-```
-() -> {  
-
-//Body of no parameter lambda  
-
-} 
+// Multiple parameters  
+(x, y) -> x + y
 ```
 
-# One Parameter Syntax
-```
-(p1) -> {  
+## 📚 Examples
 
-//Body of single parameter lambda  
+```java
+// Traditional vs Lambda
+Runnable r1 = new Runnable() {
+    public void run() { System.out.println("Old way"); }
+};
 
-} 
-```
+Runnable r2 = () -> System.out.println("Lambda way!");
 
-
-# Two Parameter Syntax
-```
-(p1,p2) -> {  
-
-//Body of multiple parameter lambda  
-
-}  
+// Collections
+List<String> names = Arrays.asList("Alice", "Bob");
+names.forEach(name -> System.out.println(name));
+names.forEach(System.out::println); // Method reference
 ```
 
+## 🔧 Functional Interfaces
 
-<img src="https://i.ytimg.com/vi/ph-94lsHloo/maxresdefault.jpg" />
+| Interface | Method | Purpose |
+|-----------|--------|---------|
+| Consumer | accept(T) | Takes input, no output |
+| Supplier | get() | No input, returns output |
+| Function | apply(T) | Input to output |
+| Predicate | test(T) | Returns boolean |
 
-# Lambda Expression in Java
+## 🛠️ Technologies
 
-🔧 This GitHub repository contains a simple project that demonstrates the implementation of lambda expressions in Java.
-
-
-
-## Project Structure 📁
-
-The project in this repository showcases the usage of lambda expressions through a simple example. The code is organized as follows:
-
-```
-- Examples/
-  - src/
-    - com/masai/
-      - LambdaExpressionDemo.java
-```
-
-📄 The `LambdaExpressionDemo.java` file contains the main class that demonstrates the implementation of lambda expressions. It includes examples of how to use lambda expressions in different scenarios, such as sorting a list and implementing functional interfaces.
-
-## Getting Started 🚀
-
-To run this project locally, follow these steps:
-
-1. Clone this repository to your local machine using the following command:
-
-   ```bash
-   git clone https://github.com/Shubh2-0/Lambda-Expression-in-Java.git
-   ```
-
-2. Open the `LambdaExpressionDemo.java` file in your favorite Java IDE.
-
-3. Compile and run the `LambdaExpressionDemo.java` file.
-
-4. Observe the output in the console, which demonstrates the functionality and usage of lambda expressions.
-
-## Contributing 🤝
-
-🙌 Contributions are welcome! If you would like to contribute to this project, please follow these steps:
-
-1. Fork the repository.
-
-2. Create a new branch for your feature or bug fix.
-
-3. Make your changes and commit them.
-
-4. Push your changes to your forked repository.
-
-5. Submit a pull request to the original repository, describing your changes in detail.
-
-📝 Please ensure that your contributions adhere to the code standards and guidelines followed in this project.
-
-
-## Acknowledgments 🙏
-
-I would like to acknowledge the following resources that helped in understanding and implementing lambda expressions in Java:
-
-- Oracle's official Java documentation on lambda expressions
-- Online tutorials and examples from various Java programming websites
-
-Thank you for visiting this repository! If you have any questions or suggestions, feel free to reach out. 😊
-
+Java 8+ | Eclipse/IntelliJ IDE
 
 ## 📬 Contact
 
-If you want to contact me, you can reach me through below handles.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shubham-bhati-787319213/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shubhambhati226@gmail.com)
 
- <p align="left">
-  <a href="https://www.linkedin.com/in/bhatishubham/" target="_blank"><img align="center" src="https://skillicons.dev/icons?i=linkedin" width="40px" alt="linkedin" /></a>&emsp;
-  <a title="shubhambhati226@gmail.com" href="mailto:shubhambhati226@gmail.com" target="_blank"><img align="center"  src="https://cdn-icons-png.flaticon.com/128/888/888853.png"  width="40px"   alt="mail-me" /></a>&emsp;
-  <a href="https://wa.me/+916232133187" target="blank"><img align="center" src="https://media2.giphy.com/media/Q8I2fYA773h5wmQQcR/giphy.gif" width="40px"  alt="whatsapp-me" /></a>&emsp;
-<a href="https://www.hackerrank.com/shubhambhati226?hr_r=1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" width="40px"  alt="whatsapp-me" /></a>&emsp; 
-		
-	
-	
+---
 
- </p>
+**Keywords:** Java Lambda Functional-Programming Java8 Stream-API Functional-Interface
